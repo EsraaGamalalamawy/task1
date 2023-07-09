@@ -1,0 +1,230 @@
+:root{
+    --maincolor: #007580;
+    --gray:#FAFAFA
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+*{
+    font-family: sans-serif;
+}
+img{
+    width: 120px;
+}
+.logo{
+    visibility: visible;
+}
+.slogo{
+    position: absolute;
+    width: 40px;
+    visibility: hidden;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding-top: 15px;
+    margin-left: 50%;
+    transform: translatex(-50%);
+}
+.on{
+    width: 40px;
+    height: 20px;
+    background-color: var(--gray);
+    border-radius: 15px;
+}
+.move{
+    background-color: var(--maincolor);
+    height: 100%;
+    width: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.move2{
+    background-color: var(--maincolor);
+    height: 100%;
+    width: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+    float: right;
+}
+/* ///////////////////////////////////////////////////////////////////////// */
+.main{
+    display: flex;
+    margin-top: 40px;
+    width: 90%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.left{
+    width: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 0 10%;
+}
+.right{
+    background-color: var(--gray);
+    width: 60%;
+    padding: 50px 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color:var(--maincolor);
+}
+.p1{
+    font-size: 30px;
+    margin: 0;
+}
+.one{
+    width: 48%;
+    padding-bottom: 20px;
+}
+.two{
+    width: 100%;
+    padding-bottom: 20px;
+}
+.x{
+    display: flex;
+    justify-content: flex-end;
+}
+.right input:not([type="submit"]) ,textarea{
+    width: 100%;
+    border: none;
+    margin-top: 10px;
+    height: 25px;
+    border-bottom: 1px solid #eabf7f;
+}
+.right input:focus{
+    outline: none;
+}
+textarea{
+    height: 50px;
+}
+textarea:focus{
+    outline: none;
+}
+.right button{
+    border: none;
+    background: var(--maincolor);
+    border-radius: 15px;
+    padding: 5px 20px;
+    color: white;
+    cursor: pointer;
+}
+.foot{
+    background-color: var(--gray);
+    margin-top: 40px;
+    padding: 30px 30px 0 30px;
+    position: relative;
+}
+.foot .txt{
+    width: 40%;
+    font-size: 13px;
+}
+.foot .ul1{
+    list-style-type: none;
+    display: flex;
+    padding: 10px 0;
+    font-weight: bold;
+}
+.foot .ul1 li{
+    padding: 5px 10px;
+}
+.foot .ul2{
+    display: flex;
+    justify-content: space-between;
+}
+.foot .ul2 a{
+    color: var(--maincolor);
+}
+.foot .ul2 ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.foot .ul2 ul li{
+    padding: 0 10px;
+}
+.foot .ul2 p{
+    font-size: 12px;
+    color: var(--maincolor);
+    text-align: center;
+}
+@media (max-width:576px) {
+    .logo{
+        visibility: hidden;
+    }
+    .slogo{
+        visibility: visible;
+    }
+    .on{
+        width: 30px;
+        height: 2px;
+        background: black;
+        position: relative;
+    }
+    .on::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: -4px;
+        background-color: black;
+    }
+    .on::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: -4px;
+        background-color: black;
+    }
+    .move{
+        height: 0;
+        width: 0;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .x{
+        justify-content: center;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+    .one{
+        width: 100%;
+    }
+    .right input:not([type="submit"]){
+        height: 40px;
+    }
+    textarea{
+        height: 100px;
+    }
+    .foot .txt{
+        width: 100%;
+    }
+    .foot .ul1{
+        display: block;
+    }
+    .foot .ul2 ul{
+        position: absolute;
+        flex-direction: column-reverse;
+        right: 5px;
+        top: 85px;
+        font-size: 22px;
+    }
+    .foot .ul2 ul li {
+        padding: 10px 10px;
+    }
+}
