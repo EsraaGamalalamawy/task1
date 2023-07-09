@@ -39,10 +39,10 @@
             <div className='ul2'>
                 <p>@2023 EGYPT,ALL RIGHTS RESERVED</p>
                 <ul>
-                    <li><a href='http://localhost:3000/'><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href='http://localhost:3000/'><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href='http://localhost:3000/'><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href='http://localhost:3000/'><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href='https://esraagamalalamawy.github.io/task1/'><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href='https://esraagamalalamawy.github.io/task1/'><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href='https://esraagamalalamawy.github.io/task1/'><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href='https://esraagamalalamawy.github.io/task1/'><i class="fa-brands fa-linkedin-in"></i></a></li>
                 </ul>
             </div>
             </div>
